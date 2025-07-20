@@ -9,8 +9,8 @@ const projects = [
     image: 'assets/portfolio.jpg',
     category: 'Web Development',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    githubUrl: 'https://github.com/hhekmat/hhekmat.github.io',
-    liveUrl: 'https://hhekmat.github.io',
+    githubUrl: 'https://github.com/hhekmat/hamedhekmat.github.io',
+    liveUrl: 'https://hamedhekmat.github.io',
     features: [
       'Responsive design',
       'Dynamic content loading',
