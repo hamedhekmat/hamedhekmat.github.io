@@ -45,6 +45,7 @@ function renderProjects(activeCategory) {
 }
 
 function setupFilters() {
+  console.log('setupFilters running')
   let activeCategory = 'All';
   renderFilters(activeCategory);
   renderProjects(activeCategory);
