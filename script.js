@@ -1,4 +1,19 @@
 // script.js
+
+// Get unique categories from projects array
+function getCategories() {
+  const categories = projects.map(p => p.category);
+  return ['All', ...Array.from(new Set(categories))];
+}
+
+function createFilterButton(category, activeCategory) {
+  return `
+    <button class="filter-btn${category === activeCategory ? ' active' : ''}" data-category="${category}">
+      ${category}
+    </button>
+  `;
+}
+
 function createProjectCard(project) {
   return `
     <div class="project-card">
@@ -14,12 +29,33 @@ function createProjectCard(project) {
   `;
 }
 
-function loadProjects() {
-  const projectList = document.getElementById('projectList');
-  if (projectList) {
-    projectList.innerHTML = projects.map(createProjectCard).join('');
-  }
+function renderFilters(activeCategory) {
+  const filterBar = document.getElementById('filterBar');
+  const categories = getCategories();
+  filterBar.innerHTML = categories.map(cat => createFilterButton(cat, activeCategory)).join('');
 }
 
-// Load projects when page loads
-document.addEventListener('DOMContentLoaded', loadProjects);
+function renderProjects(activeCategory) {
+  const projectList = document.getElementById('projectList');
+  let filtered = projects;
+  if (activeCategory && activeCategory !== 'All') {
+    filtered = projects.filter(p => p.category === activeCategory);
+  }
+  projectList.innerHTML = filtered.map(createProjectCard).join('');
+}
+
+function setupFilters() {
+  let activeCategory = 'All';
+  renderFilters(activeCategory);
+  renderProjects(activeCategory);
+
+  document.getElementById('filterBar').addEventListener('click', function(e) {
+    if (e.target.classList.contains('filter-btn')) {
+      activeCategory = e.target.getAttribute('data-category');
+      renderFilters(activeCategory);
+      renderProjects(activeCategory);
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', setupFilters);
