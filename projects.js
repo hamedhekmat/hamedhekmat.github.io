@@ -56,6 +56,24 @@ const projects = [
   },
   {
     id: 4,
+    slug: 'pneumonia-classifier',
+    title: 'Pneumonia Detection Mentorship',
+    shortDescription: 'A full-stack task management application with user authentication.',
+    longDescription: 'A comprehensive task management application that allows users to create, organize, and track their tasks. Features include user authentication, task categorization, due date tracking, and real-time updates.',
+    image: 'assets/task-manager.jpg',
+    categories: ['Healthcare', 'AI/ML', 'CV'],
+    technologies: ['networkx', 'matplotlib', 'seaborn'],
+    githubUrl: 'https://github.com/hhekmat/task-manager',
+    liveUrl: 'https://task-manager-demo.vercel.app',
+    features: [
+      'User authentication',
+      'Task categorization',
+      'Real-time updates',
+      'Responsive design'
+    ]
+  },
+  {
+    id: 5,
     slug: 'surf-swim',
     title: 'System for Whole Institution Modeling (SWIM)',
     shortDescription: 'A full-stack task management application with user authentication.',
@@ -73,7 +91,7 @@ const projects = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     slug: 'drp-matching',
     title: 'Stanford Math DRP Matching Proposal',
     shortDescription: 'A full-stack task management application with user authentication.',
@@ -91,7 +109,7 @@ const projects = [
     ]
   },
   {
-    id: 6,
+    id: 7,
     slug: 'supahot',
     title: 'SUPaHOT',
     shortDescription: 'A full-stack task management application with user authentication.',
@@ -109,7 +127,7 @@ const projects = [
     ]
   },
   {
-    id: 7,
+    id: 8,
     slug: 'threads',
     title: 'C++ Threads',
     shortDescription: 'A full-stack task management application with user authentication.',
@@ -127,7 +145,7 @@ const projects = [
     ]
   },
   {
-    id: 8,
+    id: 9,
     slug: 'heap',
     title: 'Heap Allocator',
     shortDescription: 'A full-stack task management application with user authentication.',
@@ -145,7 +163,7 @@ const projects = [
     ]
   },
   {
-    id: 9,
+    id: 10,
     slug: 'balance',
     title: 'Balance Emotion Regulation App',
     shortDescription: 'A full-stack task management application with user authentication.',
@@ -163,7 +181,7 @@ const projects = [
     ]
   },
   {
-    id: 10,
+    id: 11,
     slug: 'startup-predictor',
     title: 'Startup Success Predictor',
     shortDescription: 'A full-stack task management application with user authentication.',
@@ -181,7 +199,7 @@ const projects = [
     ]
   },
   {
-    id: 11,
+    id: 12,
     slug: 'leukemia-classifier',
     title: 'Leukemia Cell Classifier',
     shortDescription: 'Interactive dashboard for visualizing complex datasets.',
