@@ -2,7 +2,9 @@
 
 // Get unique categories from projects array
 function getCategories() {
-  const allCategories = projects.flatMap(p => p.categories); // Use flatMap for arrays
+  // Safely flatten all categories arrays, ignoring missing or non-array values
+  const allCategories = projects.flatMap(p => Array.isArray(p.categories) ? p.categories : []);
+  // Remove duplicates and return
   return ['All', ...Array.from(new Set(allCategories))];
 }
 
@@ -35,6 +37,7 @@ function createProjectCard(project) {
 }
 
 function renderFilters(activeCategory) {
+  console.log(getCategories())
   const filterBar = document.getElementById('filterBar');
   const categories = getCategories();
   filterBar.innerHTML = categories.map(cat => createFilterButton(cat, activeCategory)).join('');
