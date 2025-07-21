@@ -2,8 +2,8 @@
 
 // Get unique categories from projects array
 function getCategories() {
-  const categories = projects.map(p => p.category);
-  return ['All', ...Array.from(new Set(categories))];
+  const allCategories = projects.flatMap(p => p.categories); // Use flatMap for arrays
+  return ['All', ...Array.from(new Set(allCategories))];
 }
 
 function createFilterButton(category, activeCategory) {
@@ -15,10 +15,15 @@ function createFilterButton(category, activeCategory) {
 }
 
 function createProjectCard(project) {
+  const categoryDisplay = project.categories 
+    ? project.categories.join(' • ') 
+    : project.category;
+    
   return `
     <div class="project-card">
       <img src="${project.image}" alt="${project.title}"/>
       <h3>${project.title}</h3>
+      <p class="project-category">${categoryDisplay}</p>
       <p>${project.shortDescription}</p>
       <div class="project-links">
         <a href="projects/${project.slug}.html" class="view-project">View Details</a>
@@ -39,7 +44,7 @@ function renderProjects(activeCategory) {
   const projectList = document.getElementById('projectList');
   let filtered = projects;
   if (activeCategory && activeCategory !== 'All') {
-    filtered = projects.filter(p => p.category === activeCategory);
+    filtered = projects.filter(p => p.categories.includes(activeCategory)); // Check if category is in array
   }
   projectList.innerHTML = filtered.map(createProjectCard).join('');
 }
