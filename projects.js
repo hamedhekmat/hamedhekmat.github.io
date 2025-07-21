@@ -55,9 +55,27 @@ const projects = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     slug: 'surf-swim',
     title: 'System for Whole Institution Modeling (SWIM)',
+    shortDescription: 'A full-stack task management application with user authentication.',
+    longDescription: 'A comprehensive task management application that allows users to create, organize, and track their tasks. Features include user authentication, task categorization, due date tracking, and real-time updates.',
+    image: 'assets/task-manager.jpg',
+    category: ['Healthcare', 'Systems Optimization'],
+    technologies: ['networkx', 'Multithreading/Parallelization'],
+    githubUrl: 'https://github.com/hhekmat/task-manager',
+    liveUrl: 'https://task-manager-demo.vercel.app',
+    features: [
+      'User authentication',
+      'Task categorization',
+      'Real-time updates',
+      'Responsive design'
+    ]
+  },
+  {
+    id: 5,
+    slug: 'drp-matching',
+    title: 'Stanford Math DRP Matching Proposal',
     shortDescription: 'A full-stack task management application with user authentication.',
     longDescription: 'A comprehensive task management application that allows users to create, organize, and track their tasks. Features include user authentication, task categorization, due date tracking, and real-time updates.',
     image: 'assets/task-manager.jpg',
