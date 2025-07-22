@@ -5,27 +5,30 @@ const projects = [
     slug: 'mychart',
     title: 'Interactive MyChart Extension',
     shortDescription: 'Increasing the interpretability of medical records via personal chatbot and interactive timeline.',
-    longDescription: '',
-    image: 'assets/wishingwell.jpg',
+    longDescription: `
+For Stanford Medicine's 2025 Business and Research Insights To Excellence (BRITE) internship program, I'm currently working on 
+    `,
+    image: '',
     categories: ['Full Stack', 'Healthcare', 'NLP/LLMs'],
-    technologies: ['Flask', 'SupaBase', 'React Native'],
+    technologies: ['Flask', 'neo4j', 'SupaBase', 'React Native'],
     links: [],
     features: [
-        'Responsive design',
-        'Dynamic content loading',
-        'Clean, modern UI',
-        'Fast performance'
+        'Knowledge graph representation of medical records',
+        'GraphRAG enabled chat completion',
+        'Interactive timeline of medical journey'
     ]
   },
   {
     id: 2,
     slug: 'wishing-well',
     title: 'WishingWell',
-    shortDescription: 'A simple, responsive portfolio built with HTML, CSS, and JavaScript.',
-    longDescription: 'This portfolio website showcases my projects and skills. Built with vanilla HTML, CSS, and JavaScript for simplicity and performance. Features a clean design with smooth animations and responsive layout.',
-    image: 'assets/wishingwell.jpg',
+    shortDescription: 'iOS app for spreading kindness through daily microinteractions.',
+    longDescription: `
+WishingWell is an iOS app that allows users to spread kindness through daily microinteractions. It's a simple app that allows users to send wishes to their friends and family.
+    `,
+    image: 'assets/images/wishingwell.png',
     categories: ['Mobile Development', 'For Funsies', 'Course Projects'],
-    technologies: ['Flask', 'SupaBase', 'React Native'],
+    technologies: ['Flask', 'SupaBase', 'React Native', 'Render'],
     links: [
       { type: 'report', label: 'Final Report', url: 'assets/files/wishingwell.pdf' }
     ],
@@ -40,10 +43,12 @@ const projects = [
     id: 3,
     slug: 'ecd-diffusion',
     title: 'Diffusion Models and Eigenvector Centrality Dominance',
-    shortDescription: 'A full-stack task management application with user authentication.',
-    longDescription: 'A comprehensive task management application that allows users to create, organize, and track their tasks. Features include user authentication, task categorization, due date tracking, and real-time updates.',
-    image: 'assets/task-manager.jpg',
-    categories: ['Graph Theory', 'Systems Optimization','Course Projects'],
+    shortDescription: 'Modeling the optimal seeding problem by exploring alternative models of diffusion and their relationship to centrality measures.',
+    longDescription: `
+This project explores the relationship between diffusion models and eigenvector centrality dominance.
+    `,
+    image: '',
+    categories: ['Graph Theory', 'Systems Optimization', 'Course Projects'],
     technologies: ['networkx', 'matplotlib', 'seaborn'],
     links: [
       { type: 'report', label: 'Final Report', url: 'assets/files/ecd-diffusion.pdf' },
@@ -101,7 +106,7 @@ const projects = [
     shortDescription: 'A full-stack task management application with user authentication.',
     longDescription: 'A comprehensive task management application that allows users to create, organize, and track their tasks. Features include user authentication, task categorization, due date tracking, and real-time updates.',
     image: 'assets/task-manager.jpg',
-    categories: ['Healthcare', 'Systems Optimization'],
+    categories: ['Graph Theory', 'Systems Optimization', 'Course Projects'],
     technologies: ['networkx', 'Multithreading/Parallelization'],
     links: [
       { type: 'report', label: 'Final Report', url: 'assets/files/drp-matching.pdf' },
