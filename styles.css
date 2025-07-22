@@ -418,3 +418,55 @@ footer {
   border-color: #667eea;
   transform: translateY(-1px);
 }
+
+.project-detail-content {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem;
+  text-align: left;
+}
+
+.project-detail-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.project-detail-image {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.project-detail-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.project-detail-section {
+  margin-bottom: 2rem;
+}
+
+.project-tech-list, .project-features-list {
+  margin: 0.5rem 0 0 1.5rem;
+  padding: 0;
+}
+
+.project-tech-list li, .project-features-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.project-detail-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
