@@ -3,14 +3,13 @@ const projects = [
   {
     id: 1,
     slug: 'mychart',
-    title: 'Interactive MyChart',
-    shortDescription: 'A simple, responsive portfolio built with HTML, CSS, and JavaScript.',
-    longDescription: 'This portfolio website showcases my projects and skills. Built with vanilla HTML, CSS, and JavaScript for simplicity and performance. Features a clean design with smooth animations and responsive layout.',
+    title: 'Interactive MyChart Extension',
+    shortDescription: 'Increasing the interpretability of medical records via personal chatbot and interactive timeline.',
+    longDescription: '',
     image: 'assets/wishingwell.jpg',
     categories: ['Full Stack', 'Healthcare', 'NLP/LLMs'],
     technologies: ['Flask', 'SupaBase', 'React Native'],
-    githubUrl: 'https://github.com/hhekmat/hamedhekmat.github.io',
-    liveUrl: 'https://hamedhekmat.github.io',
+    links: [],
     features: [
         'Responsive design',
         'Dynamic content loading',
@@ -27,8 +26,9 @@ const projects = [
     image: 'assets/wishingwell.jpg',
     categories: ['Mobile Development', 'For Funsies', 'Course Projects'],
     technologies: ['Flask', 'SupaBase', 'React Native'],
-    githubUrl: 'https://github.com/hhekmat/hamedhekmat.github.io',
-    liveUrl: 'https://hamedhekmat.github.io',
+    links: [
+      { type: 'report', label: 'Final Report', url: 'assets/files/wishingwell.pdf' }
+    ],
     features: [
       'Responsive design',
       'Dynamic content loading',
@@ -45,8 +45,10 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['Graph Theory', 'Systems Optimization','Course Projects'],
     technologies: ['networkx', 'matplotlib', 'seaborn'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [
+      { type: 'report', label: 'Final Report', url: 'assets/files/ecd-diffusion.pdf' },
+      { type: 'github', label: 'GitHub', url: 'https://github.com/hamedhekmat/ecd-diffusion' }
+    ],
     features: [
       'User authentication',
       'Task categorization',
@@ -63,8 +65,9 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['Healthcare', 'AI/ML', 'CV'],
     technologies: ['networkx', 'matplotlib', 'seaborn'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [
+      { type: 'presentation', label: 'Final Presentation', url: 'assets/files/pneumonia-classifier.pdf' },
+    ],
     features: [
       'User authentication',
       'Task categorization',
@@ -81,8 +84,9 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['Healthcare', 'Systems Optimization'],
     technologies: ['networkx', 'Multithreading/Parallelization'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [
+      { type: 'presentation', label: 'Final Presentation', url: 'assets/files/swim-presentation.pdf' },
+    ],
     features: [
       'User authentication',
       'Task categorization',
@@ -99,8 +103,9 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['Healthcare', 'Systems Optimization'],
     technologies: ['networkx', 'Multithreading/Parallelization'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [
+      { type: 'report', label: 'Final Report', url: 'assets/files/drp-matching.pdf' },
+    ],
     features: [
       'User authentication',
       'Task categorization',
@@ -117,8 +122,9 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['Healthcare', 'NLP/LLMs'],
     technologies: ['PyTorch', 'Hugging Face Transformers', 'RAG'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [
+      { type: 'Report', label: 'Final Report', url: 'assets/files/supahot.pdf' },
+    ],
     features: [
       'User authentication',
       'Task categorization',
@@ -135,8 +141,7 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['Systems', 'Course Projects'],
     technologies: ['networkx', 'Multithreading/Parallelization'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [],
     features: [
       'User authentication',
       'Task categorization',
@@ -153,8 +158,7 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['Systems', 'Course Projects'],
     technologies: ['networkx', 'Multithreading/Parallelization'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [],
     features: [
       'User authentication',
       'Task categorization',
@@ -171,8 +175,7 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['Healthcare', 'Mobile Development', 'Course Projects'],
     technologies: ['networkx', 'Multithreading/Parallelization'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [],
     features: [
       'User authentication',
       'Task categorization',
@@ -189,8 +192,9 @@ const projects = [
     image: 'assets/task-manager.jpg',
     categories: ['AI/ML', 'Course Projects'],
     technologies: ['networkx', 'Multithreading/Parallelization'],
-    githubUrl: 'https://github.com/hhekmat/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
+    links: [
+      { type: 'report', label: 'Final Report', url: 'assets/files/startup-predictor.pdf' },
+    ],
     features: [
       'User authentication',
       'Task categorization',
@@ -207,8 +211,9 @@ const projects = [
     image: 'assets/data-viz.jpg',
     categories: ['Healthcare', 'AI/ML', 'CV', 'Course Projects'],
     technologies: ['React', 'D3.js', 'TypeScript', 'Chart.js'],
-    githubUrl: 'https://github.com/hhekmat/data-viz',
-    liveUrl: 'https://data-viz-demo.vercel.app',
+    links: [
+      { type: 'report', label: 'Final Report', url: 'assets/files/leukemia-classifier.pdf' },
+    ],
     features: [
       'Interactive charts',
       'Real-time data',

@@ -33,8 +33,7 @@ function loadProjectDetail() {
         <p class="project-description">${project.longDescription}</p>
         
         <div class="project-links">
-          ${project.githubUrl ? `<a href="${project.githubUrl}" target="_blank" class="project-link">View on GitHub</a>` : ''}
-          ${project.liveUrl ? `<a href="${project.liveUrl}" target="_blank" class="project-link">Live Demo</a>` : ''}
+          ${linkButtons}
         </div>
       </div>
     </div>

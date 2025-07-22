@@ -20,17 +20,26 @@ function createProjectCard(project) {
   const categoryDisplay = project.categories 
     ? project.categories.join(' • ') 
     : project.category;
-    
+
+  // Generate link buttons
+  const linkButtons = (project.links || []).map(link => {
+    let className = '';
+    if (link.type === 'github') className = 'github-link';
+    else if (link.type === 'live') className = 'live-link';
+    else if (link.type === 'report') className = 'report-link';
+    // Add more types as needed
+
+    return `<a href="${link.url}" target="_blank" class="${className}">${link.label}</a>`;
+  }).join('');
+
   return `
     <div class="project-card">
-      <img src="${project.image}" alt="${project.title}"/>
       <h3>${project.title}</h3>
       <p class="project-category">${categoryDisplay}</p>
       <p>${project.shortDescription}</p>
       <div class="project-links">
         <a href="projects/${project.slug}.html" class="view-project">View Details</a>
-        ${project.githubUrl ? `<a href="${project.githubUrl}" target="_blank" class="github-link">GitHub</a>` : ''}
-        ${project.liveUrl ? `<a href="${project.liveUrl}" target="_blank" class="live-link">Live Demo</a>` : ''}
+        ${linkButtons}
       </div>
     </div>
   `;
