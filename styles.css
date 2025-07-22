@@ -26,8 +26,8 @@ header {
 }
 
 .headshot {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #e5e7eb;
