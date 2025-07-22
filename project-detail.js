@@ -21,6 +21,16 @@ function loadProjectDetail() {
   document.title = `${project.title} | Hamed Hekmat`;
   
   // Generate project detail HTML
+  const linkButtons = (project.links || []).map(link => {
+    let className = 'project-link';
+    if (link.type === 'github') className += ' github-link';
+    else if (link.type === 'live') className += ' live-link';
+    else if (link.type === 'report') className += ' report-link';
+    // Add more types as needed
+
+    return `<a href="${link.url}" target="_blank" class="${className}">${link.label}</a>`;
+  }).join('');
+
   document.getElementById('projectDetail').innerHTML = `
     <div class="project-header">
       <div class="project-image-large">
