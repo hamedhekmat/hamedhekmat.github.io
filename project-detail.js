@@ -26,15 +26,20 @@ function loadProjectDetail() {
     if (link.type === 'github') className += ' github-link';
     else if (link.type === 'live') className += ' live-link';
     else if (link.type === 'report') className += ' report-link';
+    else if (link.type === 'presentation') className += ' presentation-link';
     // Add more types as needed
 
     return `<a href="${link.url}" target="_blank" class="${className}">${link.label}</a>`;
   }).join('');
 
+  const imageHtml = project.image && project.image.trim()
+    ? `<img src="../${project.image}" alt="${project.title}" />`
+    : '';
+
   document.getElementById('projectDetail').innerHTML = `
     <div class="project-header">
       <div class="project-image-large">
-        <img src="../${project.image}" alt="${project.title}" />
+        ${imageHtml}
       </div>
       
       <div class="project-info-large">
