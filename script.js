@@ -23,10 +23,11 @@ function createProjectCard(project) {
 
   // Generate link buttons
   const linkButtons = (project.links || []).map(link => {
-    let className = '';
-    if (link.type === 'github') className = 'github-link';
-    else if (link.type === 'live') className = 'live-link';
-    else if (link.type === 'report') className = 'report-link';
+    let className = 'project-link';
+    if (link.type === 'github') className += ' github-link';
+    else if (link.type === 'live') className += ' live-link';
+    else if (link.type === 'report') className += ' report-link';
+    else if (link.type === 'presentation') className += ' presentation-link';
     // Add more types as needed
 
     return `<a href="${link.url}" target="_blank" class="${className}">${link.label}</a>`;

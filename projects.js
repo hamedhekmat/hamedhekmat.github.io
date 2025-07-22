@@ -26,11 +26,11 @@ For Stanford Medicine's 2025 Business and Research Insights To Excellence (BRITE
     longDescription: `
 WishingWell is an iOS app that allows users to spread kindness through daily microinteractions. It's a simple app that allows users to send wishes to their friends and family.
     `,
-    image: 'assets/images/wishingwell.png',
+    image: '/assets/images/wishingwell.png',
     categories: ['Mobile Development', 'For Funsies', 'Course Projects'],
     technologies: ['Flask', 'SupaBase', 'React Native', 'Render'],
     links: [
-      { type: 'report', label: 'Final Report', url: 'assets/files/wishingwell.pdf' }
+      { type: 'report', label: 'Final Report', url: '/assets/files/wishingwell.pdf' }
     ],
     features: [
       'Responsive design',
@@ -51,7 +51,7 @@ This project explores the relationship between diffusion models and eigenvector 
     categories: ['Graph Theory', 'Systems Optimization', 'Course Projects'],
     technologies: ['networkx', 'matplotlib', 'seaborn'],
     links: [
-      { type: 'report', label: 'Final Report', url: 'assets/files/ecd-diffusion.pdf' },
+      { type: 'report', label: 'Final Report', url: '/assets/files/ecd-diffusion.pdf' },
       { type: 'github', label: 'GitHub', url: 'https://github.com/hamedhekmat/ecd-diffusion' }
     ],
     features: [

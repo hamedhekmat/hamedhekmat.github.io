@@ -171,6 +171,26 @@ main {
   transform: translateY(-1px);
 }
 
+.report-link {
+  background: #333;
+  color: white;
+}
+
+.report-link:hover {
+  background: #555;
+  transform: translateY(-1px);
+}
+
+.presentation-link {
+  background: #333;
+  color: white;
+}
+
+.presentation-link:hover {
+  background: #555;
+  transform: translateY(-1px);
+}
+
 .live-link {
   background: #28a745;
   color: white;
