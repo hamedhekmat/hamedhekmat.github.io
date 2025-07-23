@@ -350,7 +350,7 @@ footer {
     height: 80px;
   }
   .header-content {
-    padding: 0 1rem;
+    padding: 0 1rem;   /* less padding on small screens */
     flex-direction: column;
     text-align: center;
     gap: 1rem;
@@ -383,4 +383,14 @@ footer {
   color: white;
   border-color: #667eea;
   transform: translateY(-1px);
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1200px; /* optional, for centering on large screens */
+  margin: 0 auto;
+  padding: 0 2rem;   /* horizontal padding for all screens */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
