@@ -41,7 +41,7 @@ WishingWell is an iOS app that allows users to spread kindness through daily mic
   {
     id: 3,
     slug: 'ecd-diffusion',
-    title: 'Diffusion Models and Eigenvector Centrality Dominance',
+    title: 'Diffusion and Eigenvector Centrality Dominance',
     shortDescription: 'Investigating the optimal seeding problem by exploring alternative models of diffusion and their relationship to various centrality measures.',
     longDescription: `
 This project explores the relationship between diffusion models and eigenvector centrality dominance.
