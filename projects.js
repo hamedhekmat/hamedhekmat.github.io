@@ -65,7 +65,7 @@ This project explores the relationship between diffusion models and eigenvector 
     longDescription: `
 
     `,
-    image: 'assets/task-manager.jpg',
+    image: '',
     categories: ['Healthcare', 'AI/ML', 'CV'],
     technologies: ['PyTorch', 'TensorFlow', 'Transformers'],
     links: [

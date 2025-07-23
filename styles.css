@@ -19,7 +19,7 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 2rem;
+  padding: 2rem 0; /* Only top/bottom */
   background: white;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -348,6 +348,12 @@ footer {
   .headshot {
     width: 80px;
     height: 80px;
+  }
+  .header-content {
+    padding: 0 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
   }
 }
 
