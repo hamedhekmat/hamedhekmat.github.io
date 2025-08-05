@@ -192,12 +192,12 @@ main {
 }
 
 .presentation-link {
-  background: #333;
+  background: #0b47b5;
   color: white;
 }
 
 .presentation-link:hover {
-  background: #555;
+  background: #3b94e2;
   transform: translateY(-1px);
 }
 

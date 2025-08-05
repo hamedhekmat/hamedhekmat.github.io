@@ -136,7 +136,7 @@ We recreated the backend pipeline of the application in Python, separating out t
     categories: ['Healthcare', 'NLP/LLMs'],
     technologies: ['PyTorch', 'Hugging Face Transformers', 'RAG'],
     links: [
-      { type: 'Report', label: 'Final Report', url: 'assets/files/supahot.pdf' },
+      { type: 'report', label: 'Final Report', url: 'assets/files/supahot.pdf' },
     ],
     features: [
       ''
@@ -229,7 +229,7 @@ After testing over 60 different initial hyperparameter configurations and examin
     title: 'Leukemia Cell Classifier',
     shortDescription: 'Comparing the performance of state-of-the-art complex research methods to out-of-the-box ML libraries on classifying benign vs. malignant leukemia cells.',
     longDescription: `
-For my final project in CS 279: Computational Biology, I decided to compare the performance of state-of-the-art complex research methods to out-of-the-box ML libraries on an image classification task. I found a dataset of leukemia cell images from a previous online competition, along with a research paper explaining how they attained excellent performance on the test set using extensive image preprocessing, dataset augmentation, and a very intentionally designed neural network. As I was hoping to gain some practice with PyTorch and sci-kit-learn, I was curious about how large the performance gap would be between the researchers' results and my own.
+For my final project in CS 279: Computational Biology, I compared the performance of state-of-the-art complex research methods to out-of-the-box ML libraries on an image classification task. I found a dataset of leukemia cell images from a previous online competition, along with a research paper explaining how they attained excellent performance on the test set using extensive image preprocessing, dataset augmentation, and a very intentionally designed neural network. As I was hoping to gain some practice with PyTorch and sci-kit-learn, I was curious about how large the performance gap would be between the researchers' results and my own.
 
 I began by conducting PCA on some benign and malignant cell images to gain more insight about just how similar the two distinct classes were (along with the level of difficulty of the task). Afterward, I learned about random forest classification, which I could quickly do using sk-learn. This method yielded results that weren't much worse than the research paper before their implementation of Efficient Channel Attention! Though I didn't need to include it as part of my project in my final report below, out of curiosity I continued to experiment with making my own neural network for the task using PyTorch. This yielded slight improvement over the random forest classfication, but the remaining performance gap with the research team's excellent results helped me learn about the importance in neural network architecture design while reflecting on the steps that'd be involved in improving the performance of my model.
     `,
