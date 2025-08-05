@@ -69,7 +69,7 @@ This project explores the relationship between diffusion models and eigenvector 
     categories: ['Healthcare', 'AI/ML', 'CV'],
     technologies: ['PyTorch', 'TensorFlow', 'Transformers'],
     links: [
-      { type: 'presentation', label: 'Final Presentation', url: 'assets/files/pneumonia-classifier.pdf' },
+      { type: 'presentation', label: 'Final Presentation', url: 'assets/files/pneumonia_cv.pdf' },
     ],
     features: [
       ''
@@ -192,6 +192,7 @@ My primary focus was on the journaling feature, which allows users to track thei
     technologies: ['SwiftUI', 'Firebase'],
     links: [
       { type: 'presentation', label: 'Final Presentation', url: 'assets/files/balance.pdf' },
+      { type: 'github', label: 'GitHub', url: 'https://github.com/CS342/2023-Balance' }
     ],
     features: [
       'User authentication',
@@ -216,6 +217,7 @@ After testing over 60 different initial hyperparameter configurations and examin
     technologies: ['networkx', 'Multithreading/Parallelization'],
     links: [
       { type: 'report', label: 'Final Report', url: 'assets/files/startup-predictor.pdf' },
+      { type: 'presentation', label: 'Final Presentation', url: 'https://www.youtube.com/watch?v=kkI3YXysFrc&t=1s' },
     ],
     features: [
       ''
