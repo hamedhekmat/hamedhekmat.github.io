@@ -162,12 +162,12 @@ main {
 }
 
 .view-project {
-  background: #667eea;
+  background: #9090f1;
   color: white;
 }
 
 .view-project:hover {
-  background: #5a67d8;
+  background: #4751ad;
   transform: translateY(-1px);
 }
 
