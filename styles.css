@@ -182,22 +182,22 @@ main {
 }
 
 .report-link {
-  background: #f59e42;
+  background: #4ec197;
   color: white;
 }
 
 .report-link:hover {
-  background: #555;
+  background: #295e4e;
   transform: translateY(-1px);
 }
 
 .presentation-link {
-  background: #0b47b5;
+  background: #5380d5;
   color: white;
 }
 
 .presentation-link:hover {
-  background: #3b94e2;
+  background: #16578f;
   transform: translateY(-1px);
 }
 

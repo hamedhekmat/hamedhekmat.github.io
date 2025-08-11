@@ -4,17 +4,19 @@ const projects = [
     id: 1,
     slug: 'mychart',
     title: 'Interactive MyChart Extension',
-    shortDescription: 'Increasing the interpretability of medical records by building a personal chatbot and interactive timeline on top of MyChart.',
+    shortDescription: 'Increasing the interpretability of medical records by building a RAG-enabledpersonal chatbot and interactive timeline.',
     longDescription: `
-For Stanford Medicine's 2025 Business and Research Insights To Excellence (BRITE) internship program, I'm currently working on 
+For Stanford Medicine's 2025 Business and Research Insights To Excellence (BRITE) internship program, I'm currently working on building a RAG-enabled personal chatbot and interactive timeline on top of MyChart. The program assigns pairs of students to develop software to resolve existing pain points identified by Stanford Medicine clinicians and researchers. My teammate and I have had the unique opportunity to design our project from the ground up, from the initial research and design phase to the final implementation and deployment. After deciding we wanted to develop a solution that makes understanding one's medical records more accessible and conducting some market research, we spent the first few weeks experimenting with different data engineering approaches to add structure to our sample patient data. We're now developing a hybrid RAG system with LangGraph workflow, SQL agent for retrieval of specific medical records, vector similarity search for retrieval of relevant clinical notes for more ambiguous patient queries, and streaming chat completion with LangChain and server-side events. MORE INFO COMING SOON - FEEL FREE TO CONTACT ME FOR MORE DETAILS!
     `,
     image: '',
     categories: ['Full Stack', 'Healthcare', 'NLP/LLMs'],
-    technologies: ['Flask', 'neo4j', 'PostgreSQL', 'React/Next.js'],
+    technologies: ['Flask', 'PostgreSQL', 'Cosmos DB', 'LangChain', 'LangGraph', 'React', 'Next.js'],
     links: [],
     features: [
-        'Knowledge graph representation of medical records',
-        'GraphRAG enabled chat completion',
+        'Hybrid RAG system with LangGraph workflow',
+        'SQL agent for retrieval of specific medical records',
+        'Vector similarity search for retrieval of relevant clinical notes for more ambiguous patient queries',
+        'Streaming chat completion with LangChain and server-side events',
         'Interactive timeline of medical journey'
     ]
   },
@@ -24,7 +26,7 @@ For Stanford Medicine's 2025 Business and Research Insights To Excellence (BRITE
     title: 'WishingWell',
     shortDescription: 'iOS app for spreading kindness through daily microinteractions.',
     longDescription: `
-WishingWell is an iOS app that allows users to spread kindness through daily microinteractions. It's a simple app that allows users to send wishes to their friends and family.
+WishingWell is an iOS app that allows users to spread kindness through daily microinteractions. MORE INFO COMING SOON - FEEL FREE TO CONTACT ME FOR MORE DETAILS!
     `,
     image: '/assets/images/wishingwell.png',
     categories: ['Mobile Development', 'For Funsies', 'Course Projects'],
@@ -35,7 +37,9 @@ WishingWell is an iOS app that allows users to spread kindness through daily mic
     features: [
       'Warm UI/UX design',
       'cron based scheduling',
-      'LLM-powered content moderation'
+      'LLM-powered content moderation',
+      'Streaks to reinforce user engagement',
+      'Authentication and persistent logins using Supabase and JWT'
     ]
   },
   {
@@ -44,14 +48,14 @@ WishingWell is an iOS app that allows users to spread kindness through daily mic
     title: 'Diffusion and Eigenvector Centrality Dominance',
     shortDescription: 'Investigating the optimal seeding problem by exploring alternative models of diffusion and their relationship to various centrality measures.',
     longDescription: `
-This project explores the relationship between diffusion models and eigenvector centrality dominance.
+This project explores the relationship between diffusion models and eigenvector centrality dominance. MORE INFO COMING SOON - FEEL FREE TO CONTACT ME FOR MORE DETAILS!
     `,
     image: '',
     categories: ['Graph Theory', 'Systems Optimization', 'Course Projects'],
     technologies: ['networkx', 'matplotlib', 'seaborn'],
     links: [
       { type: 'report', label: 'Final Report', url: '/assets/files/ecd-diffusion.pdf' },
-      { type: 'github', label: 'GitHub', url: 'https://github.com/hamedhekmat/ecd-diffusion' }
+      { type: 'github', label: 'GitHub', url: 'https://github.com/hamedhekmat/ecd-diffusion-sims' }
     ],
     features: [
       ''
@@ -63,7 +67,7 @@ This project explores the relationship between diffusion models and eigenvector 
     title: 'Pneumonia Detection Mentorship',
     shortDescription: 'Mentored a team of high schoolers in developing a chest X-ray classification and object detection pipeline.',
     longDescription: `
-
+As a Student Mentor at Stanford AIMI's 2025 Summer Research Internship, I mentored a team of high schoolers in developing a chest X-ray classification and object detection pipeline. We explored many model architures such as ResNet, Swin (Sliding Window Transformer), and ViT (Vision Transformers) for classification, and Fast R-CNN, RetinaNet, and YOLO for object detection. We also experimented with many other techniques to improve performance, such as data augmentation, ensembling, pretraining, dropout, hyperparameter tuning (using Optuna), and more. Above all, I tried to emphasize the importance of truly understanding the various tools and techniques at our disposal as well as understanding the problem you're trying to solve, in order to weigh tradeoffs, make informed design decisions, defend your choices, and ultimately achieve the best possible results. MORE INFO COMING SOON - FEEL FREE TO CONTACT ME FOR MORE DETAILS!
     `,
     image: '',
     categories: ['Healthcare', 'AI/ML', 'CV'],
@@ -72,7 +76,7 @@ This project explores the relationship between diffusion models and eigenvector 
       { type: 'presentation', label: 'Final Presentation', url: 'assets/files/pneumonia_cv.pdf' },
     ],
     features: [
-      ''
+      
     ]
   },
   {
@@ -139,7 +143,8 @@ We recreated the backend pipeline of the application in Python, separating out t
       { type: 'report', label: 'Final Report', url: 'assets/files/supahot.pdf' },
     ],
     features: [
-      ''
+      'Domain-specific pretraining vs task-specific finetuning',
+      'Fine-tuning methods such as LORA'    
     ]
   },
   {
@@ -148,14 +153,13 @@ We recreated the backend pipeline of the application in Python, separating out t
     title: 'C++ Threads',
     shortDescription: 'Implementation of custom thread class in C++',
     longDescription: `
-For my final project in CS 111: Operating Systems Principles, I implemented a custom thread class in C++. This project was a great opportunity to learn about the intricacies of multithreading and how to design a thread-safe data structure.
+For my final project in CS 111: Operating Systems Principles, I implemented a custom thread class in C++. This project was a great opportunity to learn about the intricacies of multithreading and how to design a thread-safe data structure. 
     `,
     image: '',
     categories: ['Systems', 'Course Projects'],
     technologies: ['C++', 'Multithreading/Parallelization', 'Mutexes', 'Condition Variables'],
     links: [],
     features: [
-      'Safe from race conditions'
     ]
   },
   {
@@ -171,10 +175,6 @@ Capstone project for CS 107: Computer Organization and Systems. Designed and imp
     technologies: ['C'],
     links: [],
     features: [
-      'User authentication',
-      'Task categorization',
-      'Real-time updates',
-      'Responsive design'
     ]
   },
   {
