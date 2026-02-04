@@ -18,7 +18,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(2rem, 4vw, 3rem); /* Responsive gap that scales with viewport */
   padding: 2rem 0; /* Only top/bottom */
   background: white;
   border-bottom: 1px solid #e5e7eb;
@@ -392,5 +392,5 @@ footer {
   padding: 0 2rem;   /* horizontal padding for all screens */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: clamp(2rem, 4vw, 3rem);  /* responsive gap between image and text */
 }

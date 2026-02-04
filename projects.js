@@ -156,7 +156,7 @@ We recreated the backend pipeline of the application in Python, separating out t
 For my final project in CS 111: Operating Systems Principles, I implemented a custom thread class in C++. This project was a great opportunity to learn about the intricacies of multithreading and how to design a thread-safe data structure. 
     `,
     image: '',
-    categories: ['Systems', 'Course Projects'],
+    categories: ['Computer Systems', 'Course Projects'],
     technologies: ['C++', 'Multithreading/Parallelization', 'Mutexes', 'Condition Variables'],
     links: [],
     features: [
@@ -171,7 +171,7 @@ For my final project in CS 111: Operating Systems Principles, I implemented a cu
 Capstone project for CS 107: Computer Organization and Systems. Designed and implemented custom implicit and explicit linked-list heap allocators, weighing tradeoffs between key performance metrics such as throughput and utilization.    
     `,
     image: '',
-    categories: ['Systems', 'Course Projects'],
+    categories: ['Computer Systems', 'Course Projects'],
     technologies: ['C'],
     links: [],
     features: [
